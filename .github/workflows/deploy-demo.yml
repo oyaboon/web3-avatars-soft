@@ -34,7 +34,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build demo
-        run: npm run build:demo
+        run: |
+          npm run clean
+          rm -rf .parcel-cache || true
+          npm run build
+          npm run build:demo
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
