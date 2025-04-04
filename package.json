@@ -11,8 +11,9 @@
     "clean": "rimraf dist",
     "build": "npm run clean && tsc",
     "prepare": "npm run build",
-    "dev": "parcel src/demo/index.html",
-    "build:demo": "parcel build src/demo/index.html --dist-dir demo --public-url ./",
+    "dev": "vite src/demo",
+    "build:demo": "vite build",
+    "build:static-demo": "powershell -Command \"New-Item -Path demo -ItemType Directory -Force; Copy-Item -Path src\\demo\\simple.html -Destination demo\\index.html; Copy-Item -Path src\\demo\\styles.css -Destination demo\"",
     "test:build-demo": "npm run build && npm run build:demo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,12 +34,14 @@
     "lucide": "^0.487.0"
   },
   "devDependencies": {
+    "@parcel/transformer-typescript-tsc": "^2.14.4",
     "@types/chroma-js": "^3.1.1",
     "@types/node": "^22.14.0",
-    "@parcel/transformer-typescript-tsc": "^2.14.4",
+    "@vitejs/plugin-react": "^4.3.4",
     "parcel": "^2.14.4",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "vite": "^6.2.5"
   }
 }

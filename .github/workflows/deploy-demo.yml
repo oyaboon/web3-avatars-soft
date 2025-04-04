@@ -37,8 +37,9 @@ jobs:
         run: |
           npm run clean
           rm -rf .parcel-cache || true
+          rm -rf demo || true
           npm run build
-          npm run build:demo
+          npx vite build --outDir demo
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
