@@ -66,6 +66,42 @@ The library uses deterministic generation to create unique gradients based on th
 3. Generates a complex CSS gradient using radial gradients at specific positions
 4. Applies subtle filters to enhance the visual effect
 
+## Development
+
+### Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/web3-avatars-soft.git
+cd web3-avatars-soft
+
+# Install dependencies
+npm install
+
+# Run the demo
+npm run dev
+
+# Build the library
+npm run build
+```
+
+### Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Continuous Integration
+
+This project uses GitHub Actions for continuous integration:
+
+- **CI Workflow**: Runs on every push to main and pull requests to ensure the code builds correctly and passes all checks.
+- **Publish Workflow**: Automatically publishes the package to npm when a new release is created.
+
 ## License
 
 MIT 
