@@ -1,0 +1,42 @@
+{
+  "name": "web3-avatars-soft",
+  "version": "1.0.0",
+  "description": "Generate beautiful gradient avatars from Ethereum addresses",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "prepare": "npm run build",
+    "dev": "parcel src/demo/index.html",
+    "build:demo": "parcel build src/demo/index.html --dist-dir demo",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "web3",
+    "avatar",
+    "gradient",
+    "blockchain",
+    "identity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "chroma-js": "^3.1.2",
+    "ethers": "^5.7.2",
+    "lucide": "^0.487.0"
+  },
+  "devDependencies": {
+    "@types/chroma-js": "^3.1.1",
+    "@types/node": "^22.14.0",
+    "parcel": "^2.14.4",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
