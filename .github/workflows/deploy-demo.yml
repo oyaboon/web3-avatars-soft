@@ -35,11 +35,18 @@ jobs:
         run: npm ci
       - name: Build demo
         run: |
-          npm run clean
-          rm -rf .parcel-cache || true
+          # Clean up any previous builds
           rm -rf demo || true
+          
+          # Build the library
           npm run build
-          npx vite build --outDir demo
+          
+          # Build the demo with Vite
+          npx vite build
+          
+          # Verify the output
+          echo "Demo directory contents:"
+          find demo -type f | sort
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

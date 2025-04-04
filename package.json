@@ -13,7 +13,7 @@
     "prepare": "npm run build",
     "dev": "vite src/demo",
     "build:demo": "vite build",
-    "build:static-demo": "powershell -Command \"New-Item -Path demo -ItemType Directory -Force; Copy-Item -Path src\\demo\\simple.html -Destination demo\\index.html; Copy-Item -Path src\\demo\\styles.css -Destination demo\"",
+    "preview": "vite preview --outDir demo",
     "test:build-demo": "npm run build && npm run build:demo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
