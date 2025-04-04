@@ -4,7 +4,7 @@ A lightweight library that generates beautiful soft gradient avatars from Ethere
 
 ## Demo
 
-View the live demo: [Web3 Avatars Soft Demo](https://yourusername.github.io/web3-avatars-soft/)
+View the live demo: [Web3 Avatars Soft Demo](https://oyaboon.github.io/web3-avatars-soft/)
 
 Run the demo locally: `npm run dev`
 
@@ -74,7 +74,7 @@ The library uses deterministic generation to create unique gradients based on th
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/web3-avatars-soft.git
+git clone https://github.com/oyaboon/web3-avatars-soft.git
 cd web3-avatars-soft
 
 # Install dependencies
