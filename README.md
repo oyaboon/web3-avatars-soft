@@ -4,6 +4,8 @@ A lightweight library that generates beautiful soft gradient avatars from Ethere
 
 ## Demo
 
+View the live demo: [Web3 Avatars Soft Demo](https://yourusername.github.io/web3-avatars-soft/)
+
 Run the demo locally: `npm run dev`
 
 The demo page includes:
@@ -101,6 +103,7 @@ This project uses GitHub Actions for continuous integration:
 
 - **CI Workflow**: Runs on every push to main and pull requests to ensure the code builds correctly and passes all checks.
 - **Publish Workflow**: Automatically publishes the package to npm when a new release is created.
+- **GitHub Pages Workflow**: Automatically builds and deploys the demo to GitHub Pages when changes are pushed to the main branch.
 
 ## License
 
