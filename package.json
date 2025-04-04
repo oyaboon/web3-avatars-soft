@@ -34,11 +34,9 @@
     "lucide": "^0.487.0"
   },
   "devDependencies": {
-    "@parcel/transformer-typescript-tsc": "^2.14.4",
     "@types/chroma-js": "^3.1.1",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^4.3.4",
-    "parcel": "^2.14.4",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.2",

@@ -36,7 +36,7 @@ jobs:
       - name: Build demo
         run: |
           # Clean up any previous builds
-          rm -rf demo || true
+          rm -rf demo .parcel-cache dist || true
           
           # Build the library
           npm run build

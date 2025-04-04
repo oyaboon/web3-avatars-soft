@@ -2,3 +2,12 @@ node_modules
 dist
 .env
 .next
+.parcel-cache
+demo
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.log
